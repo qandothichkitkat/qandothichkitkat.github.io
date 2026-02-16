@@ -142,11 +142,11 @@
           changeText(button) {
             if (button === "noButton") {
               this.currentHeaderTextIndex =
-                (this.currentHeaderTextIndex + 1) % this.headerText.length;
+                (this.currentHeaderTextIndex + 0.25) % this.headerText.length;
               this.currentConfirmationIndex =
-                (this.currentConfirmationIndex + 1) %
+                (this.currentConfirmationIndex + 0.25) %
                 this.confirmationMessages.length;
-              this.yesButtonSize += 0.75;
+              this.yesButtonSize += 0.25;
             }
           },
           yesButton() {
